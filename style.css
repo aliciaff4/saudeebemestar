@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: rgb(204, 191, 191)
+}
+
+.header{
+    background-color: rgb(204, 191, 191);
+    color: rgb(39, 32, 32);
+    text-align: center;
+    padding: 50px, 0;
+}
+
+.header h1{
+    font-size: 6em;
+}
+
+.header p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box{
+    background-color: #9b9a9a;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.box p{
+    font-size: 15pt;
+}
+
+.box h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.box p::selection{
+    background-color: darkcyan;
+    color: coral;
+}
+
+.footer{
+    background-color: rgb(155, 145, 145);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.parallax1{
+    background-image: url(https://blog.samisaude.com.br/wp-content/uploads/2020/07/cuide_saude_mental.jpg);
+}
+
+.parallax2{
+    background-image: url(https://www.planetreebrasil.com.br/wp-content/uploads/2023/08/Problemas-de-saude-mental-podem-variar-desde-preocupacoes-diarias-normais-ate-condicoes-mais-graves.-Imagem-Shutterstock.jpg);
+}
+
+.parallax3{
+    background-image: url(https://justica.sp.gov.br/wp-content/uploads/2023/01/AdobeStock_232891300-1024x745.jpeg);
+}
+
+.parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex: 1 1 100%;
+        width: 20px;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .box pre{
+        margin-left: 0;
+
+    }
+
+    .parallax{
+        background-size: 100% 90%;
+    }
+
+}
